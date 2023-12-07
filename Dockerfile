@@ -15,7 +15,7 @@ RUN apt-get update && apt-get install -y \
     curl \
     git
 
-COPY mlx $ROOT_APPLICATION/mlx
+COPY . $ROOT_APPLICATION/mlx
 
 # build
 RUN cd $ROOT_APPLICATION/mlx && \
